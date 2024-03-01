@@ -1,0 +1,29 @@
+{
+  "name": "@so1que/release",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "release": "./bin/cli.js"
+  },
+  "devDependencies": {
+    "@slack/webhook": "6.1.0",
+    "commander": "^11.1.0",
+    "inquirer": "8.2.4",
+    "rc": "^1.2.8",
+    "markdown-link-extractor": "4.0.1"
+  },
+  "peerDependencies": {
+    "@slack/webhook": "6.1.0",
+    "commander": "^11.1.0",
+    "inquirer": "8.2.4",
+    "rc": "^1.2.8",
+    "markdown-link-extractor": "4.0.1"
+  }
+}
