@@ -1,0 +1,29 @@
+name: Publish to NPM
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install PNPM
+        run: npm install -g pnpm@latest
+
+      - name: Install package dependencies
+        run: pnpm install
+
+      - name: Build package (if necessary)
+        run: pnpm build || echo "No build script found"
+
+      - name: Login to npm
+        run: echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}" > ~/.npmrc
+
+      - name: Publish to npm
+        run: pnpm publish

@@ -9,7 +9,7 @@
     "prettier-config",
     "so1que"
   ],
-  "author": "So1que",
+  "author": "so1que",
   "license": "ISC",
   "peerDependencies": {
     "prettier": "^3.2.5"

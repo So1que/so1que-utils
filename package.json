@@ -19,7 +19,7 @@
     "create-releases": "node scripts/createReleases.js",
     "create-pre-releases": "node scripts/createPreReleases.js"
   },
-  "author": "So1que",
+  "author": "so1que",
   "license": "ISC",
   "dependencies": {
     "@so1que/prettier-config": "workspace:*",
