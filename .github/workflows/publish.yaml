@@ -16,9 +16,6 @@ jobs:
       - name: Install PNPM
         run: npm install -g pnpm@latest
 
-      - name: Authorize this machine
-        run: npm adduser
-
       - name: Install package dependencies
         run: pnpm install
 
@@ -27,6 +24,9 @@ jobs:
 
       - name: Login to npm
         run: echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}" > ~/.npmrc
+
+      - name: Authorize this machine
+      run: npm adduser
 
       - name: Publish to npm
         run: pnpm publish
