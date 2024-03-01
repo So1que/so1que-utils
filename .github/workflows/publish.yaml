@@ -26,7 +26,7 @@ jobs:
         run: echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}" > ~/.npmrc
 
       - name: Authorize this machine
-      run: npm adduser
+        run: npm adduser
 
       - name: Publish to npm
         run: pnpm publish
