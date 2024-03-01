@@ -1,0 +1,17 @@
+{
+  "name": "@so1que/prettier-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "config",
+    "prettier",
+    "prettier-config",
+    "so1que"
+  ],
+  "author": "So1que",
+  "license": "ISC",
+  "peerDependencies": {
+    "prettier": "^3.2.5"
+  }
+}

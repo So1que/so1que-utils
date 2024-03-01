@@ -4,10 +4,16 @@
   "description": "",
   "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish-updates": "node scripts/publishUpdates.js",
+    "validate-changelogs": "node scripts/validateChangelogs.js",
+    "create-releases": "node scripts/createReleases.js",
+    "create-pre-releases": "node scripts/createPreReleases.js"
   },
   "author": "So1que",
   "license": "ISC",
+  "dependencies": {
+    "@so1que/prettier-config": "workspace:*"
+  },
   "devDependencies": {
     "inquirer": "8.2.4"
   }
