@@ -1,0 +1,5 @@
+/node_modules
+.gitlab-ci.yml
+pnpm-lock.yaml
+.cache
+*.md

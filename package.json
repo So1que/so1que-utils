@@ -1,0 +1,14 @@
+{
+  "name": "@so1que/utils",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "So1que",
+  "license": "ISC",
+  "devDependencies": {
+    "inquirer": "8.2.4"
+  }
+}
